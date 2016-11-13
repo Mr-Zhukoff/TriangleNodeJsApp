@@ -54,6 +54,7 @@
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
+    <Content Include="Procfile" />
     <Content Include="public\audio\juicy.mp3" />
     <Content Include="public\css\animate.min.css" />
     <Content Include="public\css\bootstrap.min.css" />
