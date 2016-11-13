@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>FlexRM.NodeJsWebApp</Name>
+    <RootNamespace>FlexRM.NodeJsWebApp</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>194924e0-8f2e-40c4-946f-a09291954158</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\js\audio.min.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\coundown-timer.js" />
+    <Compile Include="public\js\gmaps.js" />
+    <Compile Include="public\js\holder.js" />
+    <Compile Include="public\js\html5shiv.js" />
+    <Compile Include="public\js\jquery.countTo.js" />
+    <Compile Include="public\js\jquery.fitvids.js" />
+    <Compile Include="public\js\jquery.isotope.min.js" />
+    <Compile Include="public\js\jquery.js" />
+    <Compile Include="public\js\lightbox.min.js" />
+    <Compile Include="public\js\main.js" />
+    <Compile Include="public\js\masonry.min.js" />
+    <Compile Include="public\js\respond.min.js" />
+    <Compile Include="public\js\wow.min.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="package.json" />
+    <Content Include="public\audio\juicy.mp3" />
+    <Content Include="public\css\animate.min.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\font-awesome.min.css" />
+    <Content Include="public\css\lightbox.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\css\prettyPhoto.css" />
+    <Content Include="public\css\responsive.css" />
+    <Content Include="public\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\fonts\FontAwesome.otf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\images\404-bg.png" />
+    <Content Include="public\images\404.png" />
+    <Content Include="public\images\aboutus\1.jpg" />
+    <Content Include="public\images\aboutus\1.png" />
+    <Content Include="public\images\aboutus\2.jpg" />
+    <Content Include="public\images\aboutus\3.jpg" />
+    <Content Include="public\images\aboutus\4.jpg" />
+    <Content Include="public\images\aboutus\5.png" />
+    <Content Include="public\images\aboutus\6.png" />
+    <Content Include="public\images\aboutus\left.png" />
+    <Content Include="public\images\aboutus\right.png" />
+    <Content Include="public\images\blogdetails\1.png" />
+    <Content Include="public\images\blogdetails\2.png" />
+    <Content Include="public\images\blogdetails\3.png" />
+    <Content Include="public\images\blogdetails\4.png" />
+    <Content Include="public\images\blog\1.jpg" />
+    <Content Include="public\images\blog\2.jpg" />
+    <Content Include="public\images\blog\3.jpg" />
+    <Content Include="public\images\blog\4.jpg" />
+    <Content Include="public\images\blog\5.jpg" />
+    <Content Include="public\images\blog\6.jpg" />
+    <Content Include="public\images\blog\7.jpg" />
+    <Content Include="public\images\blog\8.jpg" />
+    <Content Include="public\images\blog\9.jpg" />
+    <Content Include="public\images\blog\blog-arrow.png" />
+    <Content Include="public\images\blog\left.png" />
+    <Content Include="public\images\blog\masonary\1.jpg" />
+    <Content Include="public\images\blog\masonary\10.jpg" />
+    <Content Include="public\images\blog\masonary\2.jpg" />
+    <Content Include="public\images\blog\masonary\3.jpg" />
+    <Content Include="public\images\blog\masonary\4.jpg" />
+    <Content Include="public\images\blog\masonary\5.jpg" />
+    <Content Include="public\images\blog\masonary\6.jpg" />
+    <Content Include="public\images\blog\masonary\7.jpg" />
+    <Content Include="public\images\blog\masonary\8.jpg" />
+    <Content Include="public\images\blog\masonary\9.jpg" />
+    <Content Include="public\images\blog\right.png" />
+    <Content Include="public\images\blog\timeline\1.jpg" />
+    <Content Include="public\images\blog\timeline\2.jpg" />
+    <Content Include="public\images\blog\timeline\3.jpg" />
+    <Content Include="public\images\blog\timeline\4.jpg" />
+    <Content Include="public\images\blog\timeline\5.jpg" />
+    <Content Include="public\images\blog\timeline\6.jpg" />
+    <Content Include="public\images\blog\timeline\7.jpg" />
+    <Content Include="public\images\blog\timeline\8.jpg" />
+    <Content Include="public\images\blog\timeline\9.jpg" />
+    <Content Include="public\images\coming-soon-bg.png" />
+    <Content Include="public\images\coming-soon1.png" />
+    <Content Include="public\images\coming-soon2.png" />
+    <Content Include="public\images\coming-soon3.png" />
+    <Content Include="public\images\coming-soon4.png" />
+    <Content Include="public\images\contact-bg.png" />
+    <Content Include="public\images\home\activeicon.png" />
+    <Content Include="public\images\home\client1.png" />
+    <Content Include="public\images\home\client2.png" />
+    <Content Include="public\images\home\client3.png" />
+    <Content Include="public\images\home\client4.png" />
+    <Content Include="public\images\home\client5.png" />
+    <Content Include="public\images\home\client6.png" />
+    <Content Include="public\images\home\clients.png" />
+    <Content Include="public\images\home\cycle.png" />
+    <Content Include="public\images\home\footer.png" />
+    <Content Include="public\images\home\icon1.png" />
+    <Content Include="public\images\home\icon2.png" />
+    <Content Include="public\images\home\icon3.png" />
+    <Content Include="public\images\home\image1.png" />
+    <Content Include="public\images\home\image2.png" />
+    <Content Include="public\images\home\image3.png" />
+    <Content Include="public\images\home\profile1.png" />
+    <Content Include="public\images\home\profile2.png" />
+    <Content Include="public\images\home\slider-bg.png" />
+    <Content Include="public\images\home\slider\birds1.png" />
+    <Content Include="public\images\home\slider\birds2.png" />
+    <Content Include="public\images\home\slider\hill.png" />
+    <Content Include="public\images\home\slider\house.png" />
+    <Content Include="public\images\home\slider\sun.png" />
+    <Content Include="public\images\home\tour-bg.png" />
+    <Content Include="public\images\home\tour-icon1.png" />
+    <Content Include="public\images\home\tour-icon2.png" />
+    <Content Include="public\images\home\under.png" />
+    <Content Include="public\images\icon-map.png" />
+    <Content Include="public\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="public\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="public\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="public\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="public\images\ico\favicon.ico" />
+    <Content Include="public\images\lightbox\close.png" />
+    <Content Include="public\images\lightbox\loading.gif" />
+    <Content Include="public\images\lightbox\next.png" />
+    <Content Include="public\images\lightbox\prev.png" />
+    <Content Include="public\images\logo.png" />
+    <Content Include="public\images\portfolio-details\1.jpg" />
+    <Content Include="public\images\portfolio\1.jpg" />
+    <Content Include="public\images\portfolio\10.jpg" />
+    <Content Include="public\images\portfolio\11.jpg" />
+    <Content Include="public\images\portfolio\12.jpg" />
+    <Content Include="public\images\portfolio\13.jpg" />
+    <Content Include="public\images\portfolio\14.jpg" />
+    <Content Include="public\images\portfolio\15.jpg" />
+    <Content Include="public\images\portfolio\16.jpg" />
+    <Content Include="public\images\portfolio\17.jpg" />
+    <Content Include="public\images\portfolio\18.jpg" />
+    <Content Include="public\images\portfolio\19.jpg" />
+    <Content Include="public\images\portfolio\2.jpg" />
+    <Content Include="public\images\portfolio\20.jpg" />
+    <Content Include="public\images\portfolio\21.jpg" />
+    <Content Include="public\images\portfolio\22.jpg" />
+    <Content Include="public\images\portfolio\23.jpg" />
+    <Content Include="public\images\portfolio\24.jpg" />
+    <Content Include="public\images\portfolio\3.jpg" />
+    <Content Include="public\images\portfolio\4.jpg" />
+    <Content Include="public\images\portfolio\5.jpg" />
+    <Content Include="public\images\portfolio\6.jpg" />
+    <Content Include="public\images\portfolio\7.jpg" />
+    <Content Include="public\images\portfolio\8.jpg" />
+    <Content Include="public\images\portfolio\9.jpg" />
+    <Content Include="public\images\portfolio\icon.png" />
+    <Content Include="public\images\portfolio\left.png" />
+    <Content Include="public\images\portfolio\popular1.jpg" />
+    <Content Include="public\images\portfolio\popular2.jpg" />
+    <Content Include="public\images\portfolio\popular3.jpg" />
+    <Content Include="public\images\portfolio\popular4.jpg" />
+    <Content Include="public\images\portfolio\popular5.jpg" />
+    <Content Include="public\images\portfolio\project1.jpg" />
+    <Content Include="public\images\portfolio\project2.jpg" />
+    <Content Include="public\images\portfolio\project3.jpg" />
+    <Content Include="public\images\portfolio\right.png" />
+    <Content Include="public\images\services\1.png" />
+    <Content Include="public\images\services\2.png" />
+    <Content Include="public\images\services\3.png" />
+    <Content Include="public\images\services\4.png" />
+    <Content Include="public\js\audiojs.swf" />
+    <Content Include="public\js\player-graphics.gif" />
+    <Content Include="public\js\w.gif" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="typings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\images\aboutus\" />
+    <Folder Include="public\images\blogdetails\" />
+    <Folder Include="public\images\blog\" />
+    <Folder Include="public\images\blog\masonary\" />
+    <Folder Include="public\images\blog\timeline\" />
+    <Folder Include="public\images\home\" />
+    <Folder Include="public\images\home\slider\" />
+    <Folder Include="public\images\ico\" />
+    <Folder Include="public\images\lightbox\" />
+    <Folder Include="public\images\portfolio-details\" />
+    <Folder Include="public\images\portfolio\" />
+    <Folder Include="public\images\services\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\audio\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-handlebars\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+    <Folder Include="views\layouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\404.handlebars" />
+    <Content Include="views\aboutus.handlebars" />
+    <Content Include="views\aboutus2.html" />
+    <Content Include="views\blog.html" />
+    <Content Include="views\blogdetails.html" />
+    <Content Include="views\blogfour.html" />
+    <Content Include="views\blogone.html" />
+    <Content Include="views\blogthree.html" />
+    <Content Include="views\blogtwo.html" />
+    <Content Include="views\coming-soon.html" />
+    <Content Include="views\contact.html" />
+    <Content Include="views\contact2.html" />
+    <Content Include="views\error.handlebars" />
+    <Content Include="views\index.handlebars" />
+    <Content Include="views\layouts\home.handlebars" />
+    <Content Include="views\layouts\main.handlebars" />
+    <Content Include="views\portfolio-details.html" />
+    <Content Include="views\portfolio.html" />
+    <Content Include="views\portfoliofour.html" />
+    <Content Include="views\portfolioone.html" />
+    <Content Include="views\portfoliothree.html" />
+    <Content Include="views\portfoliotwo.html" />
+    <Content Include="views\pricing.html" />
+    <Content Include="views\service.html" />
+    <Content Include="views\shortcodes.handlebars" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="bin\node.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-handlebars\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

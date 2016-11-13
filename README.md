@@ -1,2 +1,3 @@
-# TriangleNodeJsApp
-NodeJs WebApp with Express, Handlebars, Bootstrap and MongoDB
+﻿# FlexRM.NodeJsWebApp
+
+
