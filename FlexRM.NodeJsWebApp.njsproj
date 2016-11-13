@@ -16,7 +16,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>194924e0-8f2e-40c4-946f-a09291954158</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>./bin/www</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
