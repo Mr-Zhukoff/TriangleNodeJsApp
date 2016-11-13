@@ -1,12 +1,11 @@
-﻿var http = require('http');
+﻿var express = require('express');
 
-var server = http.createServer(function (req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'text/html'
-    });
-    res.end('Hello World');
-});
+var app = express();
 
 var port = process.env.PORT || 3000;
 
-server.listen(port);
+app.get('/', function (req, res) {
+    res.send('Hello World');
+})
+
+var server = app.listen(port);
